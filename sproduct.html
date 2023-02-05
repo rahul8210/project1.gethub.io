@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Bookish Bazaar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="photo/Your paragraph text.png" width=" 60px" class="logo" alt=""></a>
+        <div>
+        <ul id="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="signup.html">SignUp</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+    </div>
+</section>
+<section id="prodetails" class="section-p1">
+<div class="single-pro-image">
+<img src="photo/51v8N-Ev6bL._SX260_.jpg" width="100%" id="MainImg" alt=""><br><br>
+    <div class="small-img-group">
+    <div class="small-img-col">
+        <img src="photo/51v8N-Ev6bL._SX260_.jpg" width="100%" class="small-img" alt="">
+    </div>
+    <div class="small-img-col">
+        <img src="photo/5e6f2f0d-6d37-41cd-b06d-83d811875261.934affccb634de2ef5770fe1d5180b6a.jpeg" width="100%" class="small-img" alt="">
+    </div>
+    <div class="small-img-col">
+        <img src="photo/51v8N-Ev6bL._SX260_.jpg" width="100%" class="small-img" alt="">
+    </div>
+</div>
+</div>
+<div class="single-pro-details">
+    <h6>Home / Book</h6>
+    <h4>"Java: A Beginner's Guide"</h4>
+    <h2>$42.72</h2>
+    <input type="number" value="1">
+    <button class="normal">Add To Cart</button>
+    <h4>Product Details</h4>
+    <span>A practical introduction to Java programming--fully revised for the latest version, Java SE 17
+        Thoroughly updated for Java Platform Standard Edition 17, this hands-on resource shows, step by step, how to get started programming in Java from the very first chapter. Written by Java guru Herbert Schildt, the book starts with the basics, such as how to create, compile, and run a Java program. From there, you will learn essential Java keywords, syntax, and commands.
+        Java: A Beginner's Guide, Ninth Edition covers the basics and touches on advanced features, including multithreaded programming, generics, Lambda expressions, and Swing. Enumeration, modules, and interface methods are also clearly explained. This guide delivers the appropriate mix of theory and practical coding necessary to get you up and running developing Java applications in no time!</span>
+</section>
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form1">
+        <input type="text" placeholder="your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+<footer class="section-p1">
+    <div class="col">
+    <img  class="logo" src="photo/Your paragraph text.png" width=" 60px" alt="">
+    <h4>Contact</h4>
+    <p><strong>Address: </strong>2703 Lakewood Drive , Rochelle Park , New Jersey , United States</p>
+    <p><strong>Phone: </strong>201-888-2559</p>
+    <p><strong>Hours: </strong> Monday-Saturday: 10 a.m.-9 p.m.</p>
+    <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+            <i class="fab fa-facebook-f facebook"></i>
+            <i class="fab fa-instagram instagram"></i>
+            <i class="fab fa-twitter twitter"></i>
+            <i class="fab fa-pinterest-p pinterest"></i>
+            <i class="fab fa-youtube youtube"></i>
+        </div>
+    </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">   
+            <img src="photo/app-store-logo.png" height="50px" width="150px" alt="">
+            <img src="photo/google-play-logo.png" height="50px" width="150px" alt="">
+        </div>
+     <p>Secured Payment Gateway</p>
+     <img src="photo/Screenshot_2020-09-16-What-is-the-difference-between-RuPay-Card-VISA-Card-and-MasterCard-.png" height="50px" width="230px" alt="">
+    </div>
+    <div class="copyright">
+        <p>&#169;2023, Bookish Bazaar - HTML CSS Ecommerce</p>
+    </div>
+</footer>
+<script>
+    var MainImg=document.getElementById("MainImg");
+    var smallimg=document.getElementsByClassName("small-img");
+    smallimg[0].onclick=function(){
+        MainImg.src=smallimg[0].src;
+    }
+    smallimg[1].onclick=function(){
+        MainImg.src=smallimg[1].src;
+    }
+    smallimg[2].onclick=function(){
+        MainImg.src=smallimg[2].src;
+    }
+</script>
+</body>
+</html>
